@@ -9,16 +9,28 @@
     <widget-library name="../bin/Debug/AcceleratorMaps.exe" internal="true" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="400 300">
-    <action-group name="RootMenuItem">
-      <action id="FileAction">
+    <action-group name="Default" />
+    <action-group name="File">
+      <action id="newAction">
         <property name="Type">Action</property>
-        <property name="Label" translatable="yes">_File</property>
-        <property name="ShortLabel" translatable="yes">_File</property>
+        <property name="Label" translatable="yes">_New</property>
+        <property name="ShortLabel" translatable="yes">_New</property>
+        <property name="StockId">gtk-new</property>
+        <signal name="Activated" handler="OnNewActionActivated" />
       </action>
-      <action id="EditAction">
+      <action id="openAction">
         <property name="Type">Action</property>
-        <property name="Label" translatable="yes">_Edit</property>
-        <property name="ShortLabel" translatable="yes">_Edit</property>
+        <property name="Label" translatable="yes">_Open</property>
+        <property name="ShortLabel" translatable="yes">_Open</property>
+        <property name="StockId">gtk-open</property>
+        <signal name="Activated" handler="OnOpenActionActivated" />
+      </action>
+      <action id="quitAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">_Quit</property>
+        <property name="ShortLabel" translatable="yes">_Quit</property>
+        <property name="StockId">gtk-quit</property>
+        <signal name="Activated" handler="OnQuitActionActivated" />
       </action>
     </action-group>
     <action-group name="Edit">
@@ -46,30 +58,18 @@
         <signal name="Activated" handler="OnPreferencesActionActivated" />
       </action>
     </action-group>
-    <action-group name="File">
-      <action id="newAction">
+    <action-group name="RootMenuItem">
+      <action id="FileAction">
         <property name="Type">Action</property>
-        <property name="Label" translatable="yes">_New</property>
-        <property name="ShortLabel" translatable="yes">_New</property>
-        <property name="StockId">gtk-new</property>
-        <signal name="Activated" handler="OnNewActionActivated" />
+        <property name="Label" translatable="yes">_File</property>
+        <property name="ShortLabel" translatable="yes">_File</property>
       </action>
-      <action id="openAction">
+      <action id="EditAction">
         <property name="Type">Action</property>
-        <property name="Label" translatable="yes">_Open</property>
-        <property name="ShortLabel" translatable="yes">_Open</property>
-        <property name="StockId">gtk-open</property>
-        <signal name="Activated" handler="OnOpenActionActivated" />
-      </action>
-      <action id="quitAction">
-        <property name="Type">Action</property>
-        <property name="Label" translatable="yes">_Quit</property>
-        <property name="ShortLabel" translatable="yes">_Quit</property>
-        <property name="StockId">gtk-quit</property>
-        <signal name="Activated" handler="OnQuitActionActivated" />
+        <property name="Label" translatable="yes">_Edit</property>
+        <property name="ShortLabel" translatable="yes">_Edit</property>
       </action>
     </action-group>
-    <action-group name="Default" />
     <property name="MemberName" />
     <property name="Title" translatable="yes">MainWindow</property>
     <property name="WindowPosition">CenterOnParent</property>

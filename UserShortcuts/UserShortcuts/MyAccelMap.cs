@@ -21,7 +21,13 @@ namespace UserShortcuts
             var myAccelMap = MyAccelMap.Get();
             myAccelMap.MapChanged += MyAccelMap.OnMapChanged;
 
+            // Saving the AccelMap at this point will save the
+            // application's default key bindings configured
+            // in the GUI designer and any key bindings setup
+            // using SetAccelPath() before Save() is executed.
+            // This makes it easier to restore default key bindings.
             MyAccelMap.Save(MyAccelMap.defaultAccelFile);
+
             MyAccelMap.Load(MyAccelMap.userAccelFile);
 
             System.IntPtr intPtr = (System.IntPtr)0;

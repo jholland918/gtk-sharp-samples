@@ -24,7 +24,8 @@ public partial class MainWindow : Gtk.Window
     {
         // This demonstrates a shortcut assigned to an action that is 
         // not attached to a menu widget. This particular one is assigned 
-        // to a textbox entry. 
+        // to a textbox entry. I'm not sure that this is the best way
+        // to do this, but it seems to work. :)
         Gtk.ActionGroup specialActions = new Gtk.ActionGroup("Special");
         this.specialAction1 = new Gtk.Action("specialAction1", "Special Action 1");
         string accelerator = Gtk.Accelerator.Name((uint)Gdk.Key.j, Gdk.ModifierType.ControlMask);
