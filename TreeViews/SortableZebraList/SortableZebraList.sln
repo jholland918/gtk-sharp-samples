@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortableZebraList", "SortableZebraList\SortableZebraList.csproj", "{91AC4DEA-261F-4AA6-B33D-CE3365609A6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91AC4DEA-261F-4AA6-B33D-CE3365609A6E}.Debug|x86.ActiveCfg = Debug|x86
+		{91AC4DEA-261F-4AA6-B33D-CE3365609A6E}.Debug|x86.Build.0 = Debug|x86
+		{91AC4DEA-261F-4AA6-B33D-CE3365609A6E}.Release|x86.ActiveCfg = Release|x86
+		{91AC4DEA-261F-4AA6-B33D-CE3365609A6E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SortableZebraList\SortableZebraList.csproj
+	EndGlobalSection
+EndGlobal
