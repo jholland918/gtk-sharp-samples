@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/Wizard.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="500 400">
+    <property name="MemberName" />
+    <property name="WidthRequest">500</property>
+    <property name="HeightRequest">400</property>
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.VBox" id="vbox1">
+        <property name="MemberName" />
+        <child>
+          <widget class="Gtk.EventBox" id="eventboxHeader">
+            <property name="MemberName" />
+            <child>
+              <widget class="Gtk.Label" id="labelHeader">
+                <property name="MemberName" />
+                <property name="Xpad">12</property>
+                <property name="Ypad">12</property>
+                <property name="Xalign">0</property>
+                <property name="LabelProp" translatable="yes">&lt;span weight="bold" size="xx-large"&gt;Wizard Sample&lt;/span&gt;</property>
+                <property name="UseMarkup">True</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HSeparator" id="hseparator2">
+            <property name="MemberName" />
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Notebook" id="notebook1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="CurrentPage">0</property>
+            <property name="ShowBorder">False</property>
+            <property name="ShowTabs">False</property>
+            <signal name="SwitchPage" handler="OnNotebook1SwitchPage" />
+            <child>
+              <widget class="Gtk.Fixed" id="fixed1">
+                <property name="MemberName" />
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Label" id="labelPage1">
+                    <property name="MemberName" />
+                    <property name="Xalign">0</property>
+                    <property name="LabelProp" translatable="yes">Page1</property>
+                  </widget>
+                  <packing>
+                    <property name="X">12</property>
+                    <property name="Y">12</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="label12">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Use Gtk.Notebook.ShowTabs to control tab display.</property>
+                  </widget>
+                  <packing>
+                    <property name="X">12</property>
+                    <property name="Y">36</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelTab1">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">page1</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed2">
+                <property name="MemberName" />
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Label" id="labelPage2">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Page2</property>
+                  </widget>
+                  <packing>
+                    <property name="X">12</property>
+                    <property name="Y">12</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelTab2">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">page2</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed3">
+                <property name="MemberName" />
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Label" id="labelPage3">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Page3</property>
+                  </widget>
+                  <packing>
+                    <property name="X">12</property>
+                    <property name="Y">12</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelTab3">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">page3</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed4">
+                <property name="MemberName" />
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Label" id="labelPage4">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Page4</property>
+                  </widget>
+                  <packing>
+                    <property name="X">12</property>
+                    <property name="Y">12</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">3</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelTab4">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">page4</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed5">
+                <property name="MemberName" />
+                <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Label" id="labelPage5">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Page5</property>
+                  </widget>
+                  <packing>
+                    <property name="X">12</property>
+                    <property name="Y">12</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">4</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="labelTab5">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">page5</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HSeparator" id="hseparator1">
+            <property name="MemberName" />
+          </widget>
+          <packing>
+            <property name="Position">3</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HButtonBox" id="hbuttonbox1">
+            <property name="MemberName" />
+            <property name="Spacing">5</property>
+            <property name="BorderWidth">6</property>
+            <property name="Size">5</property>
+            <property name="LayoutStyle">End</property>
+            <child>
+              <widget class="Gtk.Button" id="buttonBack">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">&lt; Back</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnButtonBackClicked" />
+              </widget>
+              <packing>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="buttonNext">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Next &gt;</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnButtonNextClicked" />
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="buttonSkip">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Skip &gt;|</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnButtonSkipClicked" />
+              </widget>
+              <packing>
+                <property name="Position">2</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="buttonFinish">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Finish</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnButtonFinishClicked" />
+              </widget>
+              <packing>
+                <property name="Position">3</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Button" id="buttonCancel">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Cancel</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnButtonCancelClicked" />
+              </widget>
+              <packing>
+                <property name="Position">4</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">4</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
