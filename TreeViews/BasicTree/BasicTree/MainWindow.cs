@@ -13,6 +13,13 @@ public partial class MainWindow : Gtk.Window
         this.Build();
         this.SetupTreeView();
     }
+
+    public enum Column : int
+    {
+        CustomerID = 0, 
+        FirstName = 1, 
+        LastName = 2
+    }
     
     protected void OnDeleteEvent(object sender, DeleteEventArgs a)
     {
@@ -27,7 +34,7 @@ public partial class MainWindow : Gtk.Window
             var cell = new CellRendererText();
             column.Title = "Customer ID";
             column.PackStart(cell, true);
-            column.AddAttribute(cell, "text", 0);
+            column.AddAttribute(cell, "text", (int)Column.CustomerID);
             this.treeview1.AppendColumn(column);
         }
 
@@ -36,7 +43,7 @@ public partial class MainWindow : Gtk.Window
             var cell = new CellRendererText();
             column.Title = "First Name";
             column.PackStart(cell, true);
-            column.AddAttribute(cell, "text", 1);
+            column.AddAttribute(cell, "text", (int)Column.FirstName);
             this.treeview1.AppendColumn(column);
         }
 
@@ -45,7 +52,7 @@ public partial class MainWindow : Gtk.Window
             var cell = new CellRendererText();
             column.Title = "Last Name";
             column.PackStart(cell, true);
-            column.AddAttribute(cell, "text", 2);
+            column.AddAttribute(cell, "text", (int)Column.LastName);
             this.treeview1.AppendColumn(column);
         }
 
