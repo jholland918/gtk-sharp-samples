@@ -7,7 +7,7 @@ This repo contains working samples of code I create while I work with the gtk-sh
 
 I’m sharing this code because I have noticed that sometimes simple working examples can be hard to find for gtk-sharp. 
 
-So far all of these samples were created using MonoDevelop. 
+So far all of these samples were created with MonoDevelop making use of its GUI designer, Stetic.
 
 License
 -------
