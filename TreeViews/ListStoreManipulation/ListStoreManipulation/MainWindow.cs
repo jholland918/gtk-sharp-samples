@@ -2,8 +2,7 @@ using System;
 using Gtk;
 
 /// <summary>
-/// Basic handling of selection, inserts, deletes, loops, 
-/// sorts, and filters in a TreeView with a ListStore model.
+/// Basic handling of selection, inserts, deletes, and loops in a TreeView with a ListStore model.
 /// </summary>
 public partial class MainWindow : Gtk.Window
 {    
